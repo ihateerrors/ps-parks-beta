@@ -12,9 +12,12 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: "Helvetica Neue", sans-serif;
+
 }
 
-
+p {
+    font-size: 1.25rem;
+}
 /* brand colors */
 .mbp-eggshell {
     color: var(--mbp-eggshell);
@@ -119,10 +122,33 @@ h1 {
     margin-right: 10px; /* Space between input and button, adjust as needed */
 }
 
+.section-h2 {
+    padding: 1rem;
+    margin-left: 1.2rem;
+    margin-top: 5rem !important;
+}
+.h2-icon-wrap {
+    position: relative;
+
+}
+.h2-icon {
+    position: absolute;
+    z-index: 50;
+    bottom: -36px;
+    left: -18px;
+    transform: rotate(5deg);
+}
 
 
 
+.h2-icon img {
+    max-width: 100px;
+}
 
+.strong-teal {
+    font-weight: 800;
+    color: var(--mbp-teal);
+}
 
 
 /* ### Media queries  */
