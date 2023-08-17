@@ -1,0 +1,10 @@
+<svg id="Ptimeline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="130.955" height="88" viewBox="0 0 130.955 88">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_5" data-name="Rectangle 5" width="130.955" height="88" fill="#008bb2"/>
+    </clipPath>
+  </defs>
+  <g id="Group_13" data-name="Group 13" clip-path="url(#clip-path)">
+    <path id="Path_35" data-name="Path 35" d="M121.574,10.339a9.338,9.338,0,0,0-4.526,1.164A76.533,76.533,0,0,0,76.749,0C34.429,0,0,34.636,0,77.209A77.763,77.763,0,0,0,.564,86.56c.059.482.131.96.2,1.439A57.5,57.5,0,0,1,8.75,85.764c-.087-.7-.167-1.406-.233-2.114q-.3-3.181-.3-6.44c0-38.015,30.742-68.942,68.53-68.942a68.338,68.338,0,0,1,35.555,10,9.382,9.382,0,1,0,9.27-7.932" fill="#008bb2"/>
+  </g>
+</svg>

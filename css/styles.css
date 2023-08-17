@@ -1,3 +1,13 @@
+
+:root {
+--mbp-white: #ffffff;
+--mbp-eggshell: #FFF9F9;
+--mbp-dark-blue: #203350;
+--mbp-teal: #008BB2;
+--mbp-yellow: #FFB30D;
+}
+
+
 body, html {
     margin: 0;
     padding: 0;
@@ -7,28 +17,28 @@ body, html {
 
 /* brand colors */
 .mbp-eggshell {
-    color: #FFF9F9;
+    color: var(--mbp-eggshell);
 }
 
 .mbp-yellow {
-    color: #FFB30D;
+    color: var(--mbp-yellow);
 }
 
 .mbpbtn {
-    color: #FFB30D;
+    color: var(--mbp-yellow);
 }
 
 #mbp-link {
-    background-color: #FFB30D;
+    background-color: var(--mbp-yellow);
     font-weight: 700; 
-   font-size: 1em;
+   font-size: 1rem;
 padding: 8px 12px;}
     
 .mbph1 {
     margin-top: 100px;
     letter-spacing: 0px;
     color: #ffff;    
-    font-size: 2em;
+    font-size: 2rem;
 }
 #logo1 {
     /* margin-top: 68px; */
