@@ -36,6 +36,9 @@ p {
 padding: 8px 12px;
 }
 
+.mbp-link  {
+  color:#fff9f9 !important;
+}
 .mbph1 {
   margin-top: 100px;
   letter-spacing: 0px;
@@ -47,8 +50,8 @@ padding: 8px 12px;
   display: inline-flex;
   /* max-width: 162px;
 max-height: 190px; */
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 86%;
+  max-height: 86%;
   background: transparent url("img/bellevue-logo.svg") 0% 0% no-repeat
     padding-box;
   opacity: 1;
@@ -56,10 +59,10 @@ max-height: 190px; */
 
 #logo2 {
   display: inline-flex;
-  margin-left: 30px;
+  margin-left: 25px;
   margin-top: 32px;
-  max-height: 80%;
-  max-width: 80%;
+  max-width: 86%;
+  max-height: 86%;
   /* max-width: 171px;
 max-height: 170px; */
   /* UI Properties */
