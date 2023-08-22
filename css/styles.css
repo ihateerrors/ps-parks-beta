@@ -77,12 +77,19 @@ header {
   /* max-height: 90vh; */
   overflow: hidden;
   color: #fff;
+  height: 100vh;
 }
 
 .header-content {
   text-align: center;
   margin-top: 15em;
 }
+#hero-section {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+}
+
 
 .bg-video {
   position: absolute;
@@ -176,4 +183,11 @@ h1 {
   .logo-container > * {
     width: 10rem;
   }
+}
+@media  screen and (max-width: 390px) {
+  .mbph1 {
+    font-size: 28px;
+    margin-top: 2rem;
+  }
+  
 }
