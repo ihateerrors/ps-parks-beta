@@ -33,7 +33,6 @@ p {
   background-color: var(--mbp-yellow);
   font-weight: 700;
   font-size: 1rem;
-padding: 8px 12px;
 }
 
 .mbp-link  {
@@ -170,9 +169,7 @@ h1 {
 /* ### Media queries  */
 
 @media screen and (min-width: 801px) {
-    #hero-section {
-        height: 85vh;
-    }
+   
   .mbph1 {
     font-size: 40px;
   }
