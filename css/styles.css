@@ -173,6 +173,15 @@ h1 {
   max-height: 28px;
 }
 
+.lang-link {
+  color: var(--mbp-teal);
+  font-weight: 500;
+}
+
+.lang-link:visited,
+.lang-link:hover {
+  color: var(--mbp-dark-blue);
+}
 /* ### Media queries  */
 
 @media screen and (min-width: 801px) {
