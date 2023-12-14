@@ -12,8 +12,8 @@
 </script>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Meydenbauer Bay Park Information Portal</title>
-    <meta name="description" content="Meydenbauer Bay Park" />
+    <title>Port of Seattle Park Information Portal</title>
+    <meta name="description" content="Discover Port of Seattle Parks" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -58,10 +58,10 @@
     <meta name="theme-color" content="#ffffff" />
 
     <!--Facebook Open Graph -->
-    <meta property="og:title" content="Meydenbauer Bay Park Info" />
+    <meta property="og:title" content="Port of Seattle Parks Info" />
     <meta property="og:url" content="#5bbad5" />
     <meta property="og:type" content="website" />
-    <meta property="og:description" content="Meydenbauer Bay Park Info" />
+    <meta property="og:description" content="Port of Seattle Parks Info" />
     <!-- <meta property="og:image"
     content="https" />
   <meta property="og:image:secure_url"
@@ -73,17 +73,29 @@
 
     <!--Twitter Open Graph -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Meydenbauer Bay Park Info" />
+    <meta name="twitter:title" content="Port of Seattle Parks Info" />
     <meta name="twitter:description" content="Meyedenbauer Bay Park" />
     <meta name="twitter:url" content="" />
     <meta name="twitter:image" content="" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,800;1,900&family=Roboto+Mono&display=swap"
       rel="stylesheet"
-    />
+    /> -->
+
+    <!-- Primary Port font -->
+    <!-- <link href="https://fonts.cdnfonts.com/css/myriad-pro" rel="stylesheet"> -->
+
+    <link href="https://fonts.cdnfonts.com/css/source-sans-pro" rel="stylesheet">
+                
+
+     <!-- Secondary Port font -->
+
+     <link href="https://fonts.cdnfonts.com/css/adobe-caslon-pro" rel="stylesheet">
+                
+                
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
@@ -139,20 +151,20 @@
 
            
             <div class="row mb-auto">
-              <!-- <div class="logo-container d-flex gap-4 mt-3 mt-lg-5"> -->
-                <div class="logo-container pt-2 gap-4 mt-lg-5">
-                <img class="img-fluid b-icon" id="logo1" src="img/bellevue-logo.svg" alt="Bellevue logo">
-                <img class="img-fluid mbp-icon" id="logo2" src="img/meydenbauerpark-logo.svg" alt="meydenbauerpark-logo">
-              </div>
+      
             </div>
-            <div class="row my-5 text-center gap-3">
+            <div class="row my-2 text-center gap-3">
+              <!-- <div class="logo-container pt-2 gap-4 mt-lg-5 center"> -->
+                <div class="logo-container pt-2 mb-3 gap-4 mt-4 center">
+                <img class="img-fluid mbp-icon" src="img/logo-port_color-lg.png" alt="Port of Seattle logo" style="width: 180px; height: auto;">
+              </div>
               <div>
-                <h1 class="mbph1">WHAT’S ON THE HORIZON FOR MEYDENBAUER BAY PARK?</h1>
+                <h1 class="mbph1">Be Part of the Future of Port of Seattle Parks!</h1>
               </div>
               <div>
                 <form
                 class="px-md-5 "
-                action="https://public.govdelivery.com/accounts/WABELLE/subscribers/qualify"
+                action="#"
                 id="WABELLE_301"
                 method="get"
                 target="_blank"
@@ -176,7 +188,7 @@
                     <span
                       class="form__label sr-only"
                       id="subscribe-form-input-placeholder"
-                      >Enter your email address</span
+                      >Email</span
                     >
                     <input
                       class="form__control form-control p-md-3"
@@ -190,15 +202,14 @@
                   <div class="">
                     <button
                       type="submit"
-                      id="mbp-link"
-                      class="btn pbutton mbpbtn p-md-3"
+                                  class="pos-link"
                     >
-                      SIGN UP TO LEARN MORE!
+                      Sign up to learn more
                     </button>
                   </div>
                   <div class="d-flex gap-3 social-icons">
-                    <a href="https://twitter.com/bvueparks"><img src="img/twitter.svg" alt="Twitter logo"></a>
-                    <a href="https://www.facebook.com/bellevueparks"><img src="img/facebook.svg" alt="facebook logo"></a>
+                    <a href="https://twitter.com/PortofSeattle"><img src="img/twitter.svg" alt="Twitter logo"></a>
+                    <a href="https://www.facebook.com/PortofSeattle"><img src="img/facebook.svg" alt="facebook logo"></a>
                   </div>
 
                 </div>
@@ -206,8 +217,7 @@
         
               </div>
              <div>
-              <!-- <p class="ml-5 mr-5 pl-3 pr-3 mt-3"style="font-size: 18px"><em>Visit The City of <a href="https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/meydenbauer-beach-park" target="_blank" class="mbp-link">Bellevue’s Meydenbauer Bay Park</a> and <a href="https://bellevuewa.gov/city-government/departments/community-development/economic-development/partnerships/grand-connection" class="mbp-link" target="_blank">Grand Connection</a> web pages to learn more.</em></p> -->
-             </div>
+                         </div>
             </div>
 
           </div>
@@ -226,33 +236,64 @@
 
         <main>
        
-          <div class="container" id="whats-new">          
-            <div class="row whats-new-section">
+          <div class="container center" id="whats-new">          
+            <!-- <div class="row whats-new-section">
               <div class="section-h2">
-                <div class="h2-icon-wrap"><i class="h2-icon"><img src="img/title-graphic.svg" alt="" loading="lazy"></i></div>
-                <div>
-                  <h2 class="mbph2">WHAT IS NEW?</h2>
-                </div>
+                <h2 class="mbph2">DISCOVER PORT OF SEATTLE PARKS</h2>
+          
               </div>
-              <p>The City of Bellevue is working on the next phase of expanding Meydenbauer Bay Park, with a focus on creating a stronger connection to downtown. This project extends south of Lake Washington Blvd NE and up to 100th Ave NE. We are in the early design phase and hope to get your input along the way!</p>
-              <p>Visit The City of Bellevue’s <a href="https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/meydenbauer-beach-park" target="_blank" class="mbp-link">Meydenbauer Bay Park</a> and <a href="https://bellevuewa.gov/city-government/departments/community-development/economic-development/partnerships/grand-connection" class="mbp-link" target="_blank">Grand Connection</a> web pages to learn more about what currently exists and how this project fits into a broader city plan.</p>
+              <h3 class="h3-section">Did you know that the Port maintains # public spaces?</h3>
+              <p></p>
               <p><em>We encourage you to sign up to our email list to stay up to date on design progress.</em></p>
-            </div>
-            <div class="row timeline-section">
-              <div class="section-h2">
-                <div class="h2-icon-wrap"><i class="h2-icon"><img src="img/Ptimeline.svg" alt="" loading="lazy"></i></div>
+            </div> -->
+
+
+      <div class="row mt-2 center-row" style="align-items: center; justify-content: center;" >
+        <!-- <div class="col-md-10" style="align-items: center; justify-content: center;" > -->
+          <p></p>
+      
+          <h2 class="mt-5 mb-4 mbph2 fw-500">DISCOVER <span style="color: #005172;">PORT OF SEATTLE</span> <span style="color: #7ab800;">PARKS</span> </h2>
+      
+         
+          <h3 class="h3-section">Did you know that the Port maintains # public spaces?</h3>
+          <p class="mt-2 mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At totam ipsum laborum quia reprehenderit quibusdam blanditiis optio esse. Nisi in reprehenderit voluptatum illo voluptas fuga doloribus facere velit odit molestias iure ut accusamus nobis, amet maxime, veritatis deleniti. Voluptate, quibusdam!</p>
+        <!-- </div> -->
+      </div>
+
+
+            <div class="row map-section">
+              <!-- <div class="section-h2">
+                <div class="h2-icon-wrap"><i class="h2-icon"><img src="img/Ptimeline.svg" alt="Map of Port of Seattle Parks" loading="lazy"></i></div>
                 <div>
                   <h2 class="mbph2">PROJECT TIMELINE</h2>
                 </div>
-              </div>
-              <figure class="mb-lg-0">
-                <a href="https://env.blob.core.windows.net/env-public/2023_0821_COB_MBP_Timeline_v4.pdf" target="_blank"><img class="img-fluid" src="img/2023_0821_COB_MBP_Timeline_v4.png" loading="lazy" alt="Timeline of project" /></a>
+              </div> -->
 
-                          <figcaption><em>Click on image to enlarge</em></figcaption>
-                          </figure>
+            <div class="col-md-8">
+              <figure class="mb-lg-0">
+                <a href="img/2023_1211_PortOfSeattle_ProjectArea_Map_v2.pdf" target="_blank"><img class="img-fluid" src="img/2023_1211_PortOfSeattle_ProjectArea_Map_v2-01.png" loading="lazy" alt="Timeline of project" /></a>
+                <figcaption><em>Click on image to view as PDF</em></figcaption>
+                </figure>
+            </div>
+              <div class="col-md-4">
+
+                <p class="mb-3"><span class="park-name">Jack Perry Memorial Park</span><br> 
+                  123 Park Street, Seattle, WA 98112
+                </p>
+
+                <p class="mb-3"><span class="park-name">Jack Block Park</span><br> 
+                  123 Park Street, Seattle, WA 98112
+                </p>
+
+                <p class="mb-3"><span class="park-name">Terminal 18 Park</span><br> 
+                  123 Park Street, Seattle, WA 98112
+                </p>
+              </div>
+
+           
                           
             </div>
-              <div class="row mt-2">
+              <!-- <div class="row mt-2">
                 <div class="col">
                   <a class="lang-link" target="_blank" href="https://env.blob.core.windows.net/env-public/2023_0821_COB_MBP_Timeline_Spanish.pdf"> Español</a>
                   |
@@ -268,20 +309,59 @@
                   |
                   <a class="lang-link" target="_blank" href="https://env.blob.core.windows.net/env-public/2023_0821_COB_MBP_Timeline_Russian.pdf">Русский</a>
                 </div>
-              </div>
-            <div class="row questions-section">
+              </div> -->
+
+
+              <section class="row history-section">
+                <h2 class="mt-5 mb-4 mbph2 fw-500"><span style="color: #005172;">Our</span><span style="color: #7ab800;"> History</span></h2>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam fugiat in libero distinctio officia! Labore tempore optio ipsum mollitia quibusdam perspiciatis, doloribus consequatur, magni ratione, maiores commodi placeat repudiandae illum culpa possimus. Porro asperiores rem omnis velit cupiditate repellat at in ipsum aperiam, illum vel, totam, voluptatum dicta mollitia accusantium!
+                </p>
+                <figure class="mb-lg-0">
+                  <h3>[ Carousel here? ]</h3>
+                 <img class="img-fluid" src="img/parks-oct-2018-0009_16x9_WEB_0.jpg" loading="lazy" alt="Timeline of project" /></a>
+                  <figcaption><em>Caption about the photo</em></figcaption>
+                  </figure>
+                </section>
+
+           <section class="row goals-section">
+            <h2 class="mt-5 mb-4 mbph2 fw-500">Goals<span style="color: #005172;"> And</span> <span style="color: #7ab800;"> Timeline</span> </h2>
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo dicta corporis beatae neque inventore sit minima ex iusto obcaecati qui!</p>
+                <p> </p>
+
+                </section>
+              <!-- #####   Take action section   ##### -->
+            <section class="row community-section">
               <div class="section-h2">
-                <div class="h2-icon-wrap"><i class="h2-icon"><img src="img/question.svg" alt="" loading="lazy"></i></div>
+        
                 <div>
-                  <h2 class="mbph2">
-                    HAVE QUESTIONS OR COMMENTS ABOUT THE PROJECT?
-                  </h2>
-                </div>
-              </div>
+                  <h2 class="mt-5 mb-4 mbph2 fw-500">Join<span style="color: #005172;"> Our Parks</span> <span style="color: #7ab800;"> Community</span> </h2>
+                  
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi placeat aut sapiente unde, eaque nemo dolore aperiam at odit nihil reprehenderit eos dicta in molestiae atque rem, ad ullam impedit. Architecto tempore velit iure laborum aut, eligendi soluta fugit non reiciendis, voluptatibus ratione quas quae!</p>
+               
+
+                <figure class="mb-lg-0">
+              
+                 <img class="img-fluid" src="img/T-107_Park_160910_42_16x9.jpg" loading="lazy" alt="Timeline of project" /></a>
+                  
+                  </figure>
+                </section>
+
+
+
+                <section class="row questions-section"> 
+                  <div class="container">   
+                <h2 class="mt-5 mb-4 mbph2 fw-500">Questions?<span style="color: #005172;">Comments?</span> <span style="color: #7ab800;">Suggestions?</span> </h2>
+             
               <p>
-                Contact us by calling <span class="strong-teal fw-400">425-452-4169</span> or emailing <a href="mailto:svanderhyden@bellevuewa.gov" class="strong-teal">svanderhyden@bellevuewa.gov</a>
+                Contact us at <span class="strong-teal">[ 555-555-5555 ] </span> or <a href="mailto:name@placeholder.com" class="strong-teal">name@placeholder.com</a>
               </p>
             </div>
+            </section>
+   
+
+
+
           </div>
         </main>
         <footer>
