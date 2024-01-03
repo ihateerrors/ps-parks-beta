@@ -140,9 +140,13 @@
     .swiper-slide .title {
       font-size: 41px;
       font-weight: 300;
+      margin-left: 5rem;
+      margin-top: 5rem;
+      z-index: 10;
     }
     .swiper-slide .subtitle {
       font-size: 24px;
+      margin-left: 5rem;
     }
     .swiper-slide .text {
       font-size: 18px;
@@ -177,13 +181,12 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); /* Adjust the opacity as needed */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)); /* Adjust the opacity as needed */
   z-index: 1;
 }
 
 /* Center the text content vertically and horizontally */
-/* .swiper-slide .title, */
-.swiper-slide .subtitle,
+
 .swiper-slide .text {
   position: absolute;
   top: 50%;
@@ -191,7 +194,10 @@
   transform: translate(-50%, -50%);
   z-index: 2;
 }
-
+.swiper-slide .title,
+.swiper-slide .subtitle {
+  z-index: 100;
+}
  </style>        
                 
                 
@@ -406,6 +412,8 @@
         <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
+                <div class="title" data-swiper-parallax="-300">History</div>
+                <div class="subtitle">Slide 1</div> 
                 <div class="text">                 
                     <p>In 1971, Seattle’s Shoreline Management Act passed which protected and mandated any new development along shorelines, including the Duwamish River, maintain areas for the public to access the waterfront.</p>
                     </div>
@@ -413,8 +421,9 @@
                 <!-- </div> -->
               </div>
               <div class="swiper-slide">
-                <!-- <div class="title" data-swiper-parallax="-300">Slide 2</div>
-                <div class="subtitle" data-swiper-parallax="-200">Subtitle</div> -->
+                <div class="title">History</div>
+                <div class="subtitle">Slide 2</div> 
+   
                 <div class="text">
                  
                     <p>In 1985, to comply with the Shoreline Management Act, the Port of Seattle created public access points along the Lower Duwamish Waterway as mitigation sites to compensate local communities for industrial development on Port properties along the waterway. The Port’s goals were:
@@ -431,7 +440,8 @@
 
               <!-- ## Slide 3 start -->
               <div class="swiper-slide">
-           
+                <div class="title" data-swiper-parallax="-300">History</div>
+                <div class="subtitle">Slide 3</div> 
                 <div class="text">
                   <p>These public access points, now known as parks, were designed to give people different ways to access the Duwamish River, whether fishing, boating, or sharing a meal. In 2007, the Port approved the Seaport Shoreline Access Plan which included “long term planned/potential uses” for the parks, including:
                     <ul>  
@@ -446,7 +456,8 @@
 
               <!-- ## Slide 4 start -->
               <div class="swiper-slide">
-           
+                <div class="title">History</div>
+                           <div class="subtitle">Slide 4</div> 
                 <div class="text">
                   <p>Access to the Port’s shoreline parks as well as current amenities were studied in 2018 by a graduate student intern and in 2020 by the Port of Seattle Community Action Team (PCAT) youth interns.</p>
                 </div>
@@ -454,7 +465,8 @@
               
               <!-- ## Slide 5 start -->
               <div class="swiper-slide">
-           
+                <div class="title">History</div>
+                <div class="subtitle">Slide 5</div> 
                 <div class="text">
                   <p>These public access points, now known as parks, were designed to give people different ways to access the Duwamish River, whether fishing, boating, or sharing a meal. In 2007, the Port approved the Seaport Shoreline Access Plan which included “long term planned/potential uses” for the parks, including:
                     <ul>  
