@@ -94,6 +94,105 @@
      <!-- Secondary Port font -->
 
      <link href="https://fonts.cdnfonts.com/css/adobe-caslon-pro" rel="stylesheet">
+          <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <style>
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+      background: #000;
+    }
+    .swiper-slide {
+      font-size: 18px;
+      color: #fff;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 40px 60px;
+      background-size: cover;
+      background-position: center;
+    }
+    .swiper-slide:nth-child(1) {
+      background-image: url("/img/1-city-rectangle.png" );
+    }
+    .swiper-slide:nth-child(2) {
+      background-image: url('/img/2_Jack-Block-Park.jpg');
+    }
+    .swiper-slide:nth-child(3) {
+      background-image: url("/img/3_Fish_Monitoring-40.jpg");
+    }
+    .swiper-slide:nth-child(4) {
+      background-image: url("/img/4-haapus-Village-Park.jpg");
+    }
+    .swiper-slide:nth-child(5) {
+      background-image: url("/img/5-DRPP-20220716-NF-172.jpg");
+    }
+    .parallax-bg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 130%;
+      height: 100%;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center;
+    }
+    .swiper-slide .title {
+      font-size: 41px;
+      font-weight: 300;
+    }
+    .swiper-slide .subtitle {
+      font-size: 24px;
+    }
+    .swiper-slide .text {
+      font-size: 18px;
+      max-width: 800px;
+      line-height: 1.3;
+    }
+           /* Set the height of the section to 100vh (viewport height) */
+           .sections1 {
+      height: 100vh;
+      overflow: hidden; /* To prevent scrollbar if content overflows */
+    }
+    /* Rest of your CSS remains unchanged */
+
+
+    /* Update the .swiper-slide styles */
+.swiper-slide {
+  font-size: 18px;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0; /* Remove padding to center content vertically */
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Add relative positioning for absolute content */
+}
+
+/* Add a semi-transparent background overlay */
+.swiper-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); /* Adjust the opacity as needed */
+  z-index: 1;
+}
+
+/* Center the text content vertically and horizontally */
+/* .swiper-slide .title, */
+.swiper-slide .subtitle,
+.swiper-slide .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+ </style>        
                 
                 
     <script
@@ -102,43 +201,17 @@
       crossorigin="anonymous"
     ></script>
 
-    <link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link href="styles.css" rel="stylesheet" />
+     
+      <!-- Custom CSS -->
+      <link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
 
-    <!-- <script>
-      (function (i, s, o, g, r, a, m) {
-        i["GoogleAnalyticsObject"] = r;
-        (i[r] =
-          i[r] ||
-          function () {
-            (i[r].q = i[r].q || []).push(arguments);
-          }),
-          (i[r].l = 1 * new Date());
-        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m);
-      })(
-        window,
-        document,
-        "script",
-        "https://www.google-analytics.com/analytics.js",
-        "ga"
-      );
 
-      ga("create", "UA-78280327-1", "auto");
-      ga("send", "pageview");
-    </script> -->
   </head>
 
       <body>
         <header>
           <video autoplay loop muted playsinline class="bg-video">
-            <!-- src="https://env.blob.core.windows.net/env-public/Meydenbauer-Banner-VidRD2.mp4" -->
+           
             <source
               src="https://env.blob.core.windows.net/env-public/MeydenbauerBanner_Final.mp4"
               
@@ -159,11 +232,11 @@
                 <img class="img-fluid mbp-icon" src="img/logo-port_color-lg.png" alt="Port of Seattle logo" style="width: 180px; height: auto;">
               </div>
               <div>
-                <h1 class="mbph1">Be Part of the Future of Port of Seattle Parks!</h1>
+                <h1 class="mbph1">What’s happening in Port-owned parks?</h1>
               </div>
               <div>
                 <form
-                class="px-md-5 "
+                class="px-md-5"
                 action="#"
                 id="WABELLE_301"
                 method="get"
@@ -212,31 +285,26 @@
                     <a href="https://www.facebook.com/PortofSeattle"><img src="img/facebook.svg" alt="facebook logo"></a>
                   </div>
 
-                </div>
-              </form>
-        
-              </div>
-             <div>
-                         </div>
+                 </div>
+                </form>         
+               </div>
+              <div>
+             </div>
             </div>
-
           </div>
-
             <div class="container-xxl">
               <div class="row mb-2 mb-md-3 mb-lg-4 text-center">
                 <div class="pg-down-chevron">
-                  <a href="#whats-new"><i class="fa-xl fa-regular fa-chevron-down" style="color: #fff"></i></a>
+                  <a href="#intro"><i class="fa-xl fa-regular fa-chevron-down" style="color: #fff"></i></a>
                 </div>
               </div>
-            </div>
-          <!-- </div> -->
-         
+            </div>            
         </header>
 
 
-        <main>
-       
-          <div class="container center" id="whats-new">          
+        <main style="width: 100vw;">
+        <section class="intro"> 
+          <!-- <div class="center" id="whats-new">           -->
             <!-- <div class="row whats-new-section">
               <div class="section-h2">
                 <h2 class="mbph2">DISCOVER PORT OF SEATTLE PARKS</h2>
@@ -247,27 +315,63 @@
               <p><em>We encourage you to sign up to our email list to stay up to date on design progress.</em></p>
             </div> -->
 
-
-      <div class="row mt-2 center-row" style="align-items: center; justify-content: center;" >
-        <!-- <div class="col-md-10" style="align-items: center; justify-content: center;" > -->
-          <p></p>
+     <div class="container"> 
+      <div class="row center-row" style="align-items: center; justify-content: center;" >
+  
+          <div class="col-md-11">  
       
-          <h2 class="mt-5 mb-4 mbph2 fw-500">DISCOVER <span style="color: #005172;">PORT OF SEATTLE</span> <span style="color: #7ab800;">PARKS</span> </h2>
-      
-         
-          <h3 class="h3-section">Did you know that the Port maintains # public spaces?</h3>
-          <p class="mt-2 mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At totam ipsum laborum quia reprehenderit quibusdam blanditiis optio esse. Nisi in reprehenderit voluptatum illo voluptas fuga doloribus facere velit odit molestias iure ut accusamus nobis, amet maxime, veritatis deleniti. Voluptate, quibusdam!</p>
-        <!-- </div> -->
+          <h2 class="mb-4 mbph2 fw-500" id="intro">WHERE <span style="color: #005172;">ARE</span> <span style="color: #7ab800;">THE PARKS?</span> </h2>
+          <figure class="mb-lg-0">
+            <a href="img/2023_1211_PortOfSeattle_ProjectArea_Map_v2.pdf" target="_blank"><img class="img-fluid" src="img/2023_1211_PortOfSeattle_ProjectArea_Map_v2-01.png" loading="lazy" alt="Timeline of project" /></a>
+            <figcaption><em>Click on image to view as PDF</em></figcaption>
+            </figure>
+         <p class="mb-5"></p>
+             
       </div>
 
 
+      </div> 
+      </div>
+    </section>
+
+
+    <section class="acknowledgements py-5" style="background-color: #e3e3dd;">
+    
+     <div class="container">
+      <div class="row">
+
+        <div class="col-md-6" style="justify-content: center;">
+          <div class="tribal-acc center ml-3 mr-3">
+            <div class="container"> 
+            <h2 class="mt-4" style="color: #005172;">Tribal acknowledgements</h2>
+            <p class="mt-4 mb-5 mr-4" style="color: #616365">We would like to acknowledge that the land on which Port parks are located are within the traditional territories of the Coast Salish peoples, keepers and protectors of both land and waterways. The Port is also engaging local tribes around shaping access to and providing amenities at Port parks.</p>
+          </div>  
+          </div> 
+        </div>
+
+        <div class="col-md-6"> 
+         <div class="container"> 
+          
+            <img class="img-fluid" src="/img/duwamish-waterfront.jpg" style="border-radius: 5px;" alt="placeholder">
+          </div>
+        </div>
+
+
+      </div>
+
+     </div>
+
+
+    </section>
+      <!-- ###  END intro section ### -->
+<!-- 
             <div class="row map-section">
-              <!-- <div class="section-h2">
+              <div class="section-h2">
                 <div class="h2-icon-wrap"><i class="h2-icon"><img src="img/Ptimeline.svg" alt="Map of Port of Seattle Parks" loading="lazy"></i></div>
                 <div>
                   <h2 class="mbph2">PROJECT TIMELINE</h2>
                 </div>
-              </div> -->
+              </div>
 
             <div class="col-md-8">
               <figure class="mb-lg-0">
@@ -288,83 +392,163 @@
                 <p class="mb-3"><span class="park-name">Terminal 18 Park</span><br> 
                   123 Park Street, Seattle, WA 98112
                 </p>
+              </div>     
+            </div>
+             -->
+
+
+
+  <!-- Swiper -->
+
+  <section class="forslider"> 
+   
+    <div class="sections1">
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="text">                 
+                    <p>In 1971, Seattle’s Shoreline Management Act passed which protected and mandated any new development along shorelines, including the Duwamish River, maintain areas for the public to access the waterfront.</p>
+                    </div>
+                 
+                <!-- </div> -->
+              </div>
+              <div class="swiper-slide">
+                <!-- <div class="title" data-swiper-parallax="-300">Slide 2</div>
+                <div class="subtitle" data-swiper-parallax="-200">Subtitle</div> -->
+                <div class="text">
+                 
+                    <p>In 1985, to comply with the Shoreline Management Act, the Port of Seattle created public access points along the Lower Duwamish Waterway as mitigation sites to compensate local communities for industrial development on Port properties along the waterway. The Port’s goals were:
+                      <ul>  
+                      <li> To provide “a wide range of use opportunities” on the waterfront</li>
+                      <li> To make public improvements to waterway access</li>
+                      <li> To encourage public use of the waterway</li>
+                      <li> To increase land devoted to public access in the Lower Duwamish Waterway</li>
+                    </ul>
+                      
+                  </p>
+                </div>
               </div>
 
+              <!-- ## Slide 3 start -->
+              <div class="swiper-slide">
            
-                          
-            </div>
-              <!-- <div class="row mt-2">
-                <div class="col">
-                  <a class="lang-link" target="_blank" href="https://env.blob.core.windows.net/env-public/2023_0821_COB_MBP_Timeline_Spanish.pdf"> Español</a>
-                  |
-                  <a class="lang-link" target="_blank" href="https://env.blob.core.windows.net/env-public/2023_0821_COB_MBP_Timeline_vietnamese.pdf"> Tiếng Việt</a>
-                  |
-                  <a class="lang-link" target="_blank" href="https://env.blob.core.windows.net/env-public/2023_0821_COB_MBP_Timeline_SimpChinese.pdf">简化字</a>
-                  |
-                  <a class="lang-link" target="_blank" href="https://env.blob.core.windows.net/env-public/2023_0821_COB_MBP_Timeline_TradChinese.pdf">繁體中文</a>
-                  |
-                  <a class="lang-link" target="_blank" href="https://env.blob.core.windows.net/env-public/2023_0821_COB_MBP_Timeline_Japan.pdf">日本語</a>
-                  |
-                  <a class="lang-link" target="_blank" href="https://env.blob.core.windows.net/env-public/2023_0821_COB_MBP_Timeline_Korean.pdf">한국어</a>
-                  |
-                  <a class="lang-link" target="_blank" href="https://env.blob.core.windows.net/env-public/2023_0821_COB_MBP_Timeline_Russian.pdf">Русский</a>
+                <div class="text">
+                  <p>These public access points, now known as parks, were designed to give people different ways to access the Duwamish River, whether fishing, boating, or sharing a meal. In 2007, the Port approved the Seaport Shoreline Access Plan which included “long term planned/potential uses” for the parks, including:
+                    <ul>  
+                       <li> Preserve, maintain and expand habitat mitigation</li>
+                       <li> Enhance and expand public access</li>
+                  </ul>
+                    </p>
                 </div>
-              </div> -->
+              </div>
 
 
-              <section class="row history-section">
-                <h2 class="mt-5 mb-4 mbph2 fw-500"><span style="color: #005172;">Our</span><span style="color: #7ab800;"> History</span></h2>
 
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam fugiat in libero distinctio officia! Labore tempore optio ipsum mollitia quibusdam perspiciatis, doloribus consequatur, magni ratione, maiores commodi placeat repudiandae illum culpa possimus. Porro asperiores rem omnis velit cupiditate repellat at in ipsum aperiam, illum vel, totam, voluptatum dicta mollitia accusantium!
-                </p>
-                <figure class="mb-lg-0">
-                  <h3>[ Carousel here? ]</h3>
-                 <img class="img-fluid" src="img/parks-oct-2018-0009_16x9_WEB_0.jpg" loading="lazy" alt="Timeline of project" /></a>
-                  <figcaption><em>Caption about the photo</em></figcaption>
-                  </figure>
-                </section>
-
-           <section class="row goals-section">
-            <h2 class="mt-5 mb-4 mbph2 fw-500">Goals<span style="color: #005172;"> And</span> <span style="color: #7ab800;"> Timeline</span> </h2>
-               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo dicta corporis beatae neque inventore sit minima ex iusto obcaecati qui!</p>
-                <p> </p>
-
-                </section>
-              <!-- #####   Take action section   ##### -->
-            <section class="row community-section">
-              <div class="section-h2">
-        
-                <div>
-                  <h2 class="mt-5 mb-4 mbph2 fw-500">Join<span style="color: #005172;"> Our Parks</span> <span style="color: #7ab800;"> Community</span> </h2>
-                  
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi placeat aut sapiente unde, eaque nemo dolore aperiam at odit nihil reprehenderit eos dicta in molestiae atque rem, ad ullam impedit. Architecto tempore velit iure laborum aut, eligendi soluta fugit non reiciendis, voluptatibus ratione quas quae!</p>
-               
-
-                <figure class="mb-lg-0">
+              <!-- ## Slide 4 start -->
+              <div class="swiper-slide">
+           
+                <div class="text">
+                  <p>Access to the Port’s shoreline parks as well as current amenities were studied in 2018 by a graduate student intern and in 2020 by the Port of Seattle Community Action Team (PCAT) youth interns.</p>
+                </div>
+              </div>
               
-                 <img class="img-fluid" src="img/T-107_Park_160910_42_16x9.jpg" loading="lazy" alt="Timeline of project" /></a>
-                  
-                  </figure>
-                </section>
+              <!-- ## Slide 5 start -->
+              <div class="swiper-slide">
+           
+                <div class="text">
+                  <p>These public access points, now known as parks, were designed to give people different ways to access the Duwamish River, whether fishing, boating, or sharing a meal. In 2007, the Port approved the Seaport Shoreline Access Plan which included “long term planned/potential uses” for the parks, including:
+                    <ul>  
+                       <li> Preserve, maintain and expand habitat mitigation</li>
+                       <li> Enhance and expand public access</li>
+                  </ul>
+                    </p>
+                </div>
+              </div>
+
+            </div>
+          <div class="swiper-button-next mr-3 pr-2"> </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+          
+         </section>
+
+         <!-- ## END history caro -->
 
 
 
-                <section class="row questions-section"> 
-                  <div class="container">   
-                <h2 class="mt-5 mb-4 mbph2 fw-500">Questions?<span style="color: #005172;">Comments?</span> <span style="color: #7ab800;">Suggestions?</span> </h2>
              
-              <p>
-                Contact us at <span class="strong-teal">[ 555-555-5555 ] </span> or <a href="mailto:name@placeholder.com" class="strong-teal">name@placeholder.com</a>
-              </p>
+                   
+
+
+           <section class="survey-section py-5">
+            <div class="container">
+               <div class="row">
+
+                <div class="col-md-11">
+              
+                  <!-- <p class="mt-5 mb-4 mbph2 fw-500">How you can help</p> -->
+                  <h2 style="color: #005172"><em>Tell us how to improve your local park!</em></h2>
+           
+                   <script type="text/javascript" >document.write('<script src="http' + ( ("https:" == document.location.protocol) ? "s" : "") + '://survey.alchemer.com/s3/7661815/Port-Parks?__no_style=true&__output=embedjs&__ref=' + escape(document.location.href) + '" type="text/javascript" ></scr' + 'ipt>');</script><noscript>Distribute surveys online through web, email, social media with <a href="https://www.alchemer.com/">Alchemer</a>. <a href="https://survey.alchemer.com/s3/7661815/Port-Parks?__no_style=true&?jsfallback=true">Please take my survey now</a></noscript><style>.sg-survey{display:none; }</style>
+   
+                   <p></p>
+
+                </div>
+               </div>
+              </div>
+
+           </section>
+
+              <!-- #####   Take action section   ##### -->
+            <section class="timeline py-5" style="background-color: #005172; color: #e3e3dd">
+
+               <div class="container">
+                  <div class="row">
+                    <div class="col-md-11">
+                     
+                  <h2 class="mt-5 mb-4 mbph2 fw-500 sm-h2" style="color:#e3e3dd">Study Timeline</h2>
+                  <h3>NOTE: POSSIBLE TIMELINE GRAPHIC HERE? Is this final content?</h3>
+                  <ul class="timeline-ul"> 
+                    <li> Fall 2023 - Winter 2024: Begin outreach to identify community priorities for improvements and programming in Port parks.</li>
+                    <li> Summer 2024 – Report community priorities and recommendations for upcoming feasibility studies.</li>
+                    <li> Fall 2024 – Begin feasibility studies to assess infrastructure improvements or changes in Port parks.</li>
+                  </ul> 
+
+                    </div>
+                  </div>
+               </div>
+           
+              </section>
+
+            <section class="questions-section py-5" style="background-color: #e3e3dd"> 
+                  <div class="container">  
+                    <div class="row">
+
+                   <div class="col-md-7">
+                    <div class="container">
+                      <h2 class="mt-5 mb-4 mbph2 fw-500 sm-h2" style="color:#005172">Project contact info:</h2>
+             
+                      <p>Joseph Gellings, Senior Planner<br> <a href="mailto:Gellings.J@portseattle.org" class="strong-teal">Gellings.J@portseattle.org </a>
+                        </p>
+                     </div>
+                     </div>
+                    <div class="col-md-5">
+
+                    </div>
+
+
+                    </div>
+                    
+          
             </div>
             </section>
    
-
-
-
           </div>
         </main>
-        <footer>
+        <!-- <footer>
           <div class="container-xxl py-5 mt-5">
             <div class="row">
               <div class="col"></div>
@@ -372,10 +556,32 @@
               <div class="col"></div>
             </div>
           </div>
-        </footer>
+        </footer> -->
+
+          <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      speed: 600,
+      parallax: false,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 
         <script src="js/main.js"></script>
         <script src="https://kit.fontawesome.com/56475f5c73.js" crossorigin="anonymous"></script>
+        <!-- Bootstrap Bundle with Popper -->
+        <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script> -->
+
       </body>
     </html>
   </body>

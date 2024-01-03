@@ -1,0 +1,25 @@
+
+.carousel-caption {
+    position: absolute;
+    bottom: 10%; /* Adjust as necessary */
+    left: 50%;
+    transform: translateX(-70%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 18px; /* Font size */
+    max-width: 94%; /* Adjust the max-width as per your design */
+    width: auto; /* Adjusts width based on content */
+    overflow: hidden; /* Prevents text from overflowing */
+    word-wrap: break-word; /* Break long words */
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-caption {
+        font-size: 14px; /* Smaller font for smaller devices */
+        padding: 5px;
+        width: 100%; /* Increase max-width for smaller screens */
+    }
+  }
+  

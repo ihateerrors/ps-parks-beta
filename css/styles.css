@@ -13,6 +13,7 @@ html {
   margin: 0;
   padding: 0;
   font-family: 'Source Sans Pro', sans-serif;
+  overflow-x: hidden;
 }
 
 p {
@@ -20,8 +21,12 @@ p {
 }
 /* Port of Seattle brand colors */
 .mbp-eggshell {
-  color: var(--mbp-eggshell);
+  color:#e3e3dd !important;
 }
+
+  .sm-h2 {
+    font-size: 2.6rem !important;
+  }
 
 .mbp-yellow {
   color: var(--mbp-yellow);
@@ -229,6 +234,161 @@ h1 {
 .lang-link:hover {
   color: var(--mbp-dark-blue);
 }
+
+
+
+.bg-green-sect {
+ background-color: var(--mbp-dark-blue);
+ width: 100vw;
+}
+
+
+/* ### Carousel styles #### */
+
+#caro-section {
+  background-color: #7ab800;
+  padding: 20px; /* Adjust as needed for spacing */
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  text-align: left;
+}
+
+#historyCarousel {
+  width: 85%; /* Width of the carousel */
+  margin: auto; /* Centering the carousel */
+}
+
+.carousel-inner .carousel-item {
+  position: relative;
+  height: 800px; /* Fixed height */
+}
+
+.carousel-inner .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* 
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 5px;
+  text-align: left;
+  font-size: 18px; 
+} */
+
+.carousel-control-prev, 
+.carousel-control-next {
+  width: auto; /* Auto width for controls */
+  height: auto; /* Auto height for controls */
+}
+
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px; /* Size of arrows */
+  width: 50px;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: -10px; /* Adjust position outside of images */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 15;
+}
+
+.carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px; /* Space between indicators */
+  background-color: #fff; /* Color of indicators */
+}
+
+/* .carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px; 
+  max-width: 80%; 
+  width: auto;
+  word-wrap: break-word; 
+}
+
+@media (max-width: 768px) {
+  .carousel-caption {
+      font-size: 16px; 
+      padding: 15px;
+      max-width: 90%;
+  }
+} */
+#caro-section {
+  background-color: #7ab800;
+  padding: 20px; /* Adjust for spacing */
+}
+
+#historyCarousel {
+  width: 90%; 
+}
+
+.carousel-inner .carousel-item {
+  position: relative;
+  height: auto; /* Height adjusts to image */
+}
+
+.carousel-inner .carousel-item img {
+  width: 100%;
+  height: auto; /* Image scales with the width */
+  object-fit: cover; /* Adjusts the image to cover the item area */
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%; /* Caption takes up 75% of image width */
+  max-width: 100%; /* Ensures it doesn't exceed the item's width */
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 5px;
+  text-align: left;
+  padding: 20px;
+  font-size: 18px; /* Adjust font size as needed */
+  word-wrap: break-word;
+  min-height:max-content;
+}
+
+@media (max-width: 468px) {
+  .carousel-caption {
+    top: 5%;
+    left: 5%;
+      font-size: 1.2rem important; /* Smaller font for mobile */
+      padding: 15px;
+      text-align: left;
+       /* min-height: 800px; */
+       width: 90%;
+  }
+
+  #historyCarousel {
+    width: 100%;
+  }
+}
+
+
 /* ### Media queries  */
 
 @media screen and (min-width: 801px) {
